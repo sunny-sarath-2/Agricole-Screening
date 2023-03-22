@@ -200,7 +200,7 @@ function App() {
                 onChange={onInputChange}
                 value={switchPlaces ? inputValue.USD : inputValue.EUR}
                 currency={switchPlaces ? "$" : "€"}
-                placeholder={"Enter value here"}
+                placeholder={`Enter ${switchPlaces ? "USD" : "EUR"} here`}
               />
               <p>{switchPlaces ? "USD" : "EUR"}</p>
             </div>
@@ -227,7 +227,7 @@ function App() {
                 onChange={onInputChange}
                 value={switchPlaces ? inputValue.EUR : inputValue.USD}
                 currency={switchPlaces ? "€" : "$"}
-                placeholder={"Enter USD here"}
+                placeholder={`Enter ${switchPlaces ? "EUR" : "USD"} here`}
                 onKeyDown={handleSave}
               />
               <p>{switchPlaces ? "EUR" : "USD"}</p>
